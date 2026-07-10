@@ -1,78 +1,74 @@
-**# ☁️ AWS EC2 Static Website**
+# ☁️ AWS EC2 Static Website
 
 
 
-**## 📌 Overview**
+## 📌 Overview
 
 
 
-**This is my first cloud project where I deployed a static website on an AWS EC2 Ubuntu instance using Apache Web Server.**
+This is my first cloud project where I deployed a static website on an AWS EC2 Ubuntu instance using Apache Web Server.
 
 
 
-**## 🛠️ Tech Stack**
+## 🛠️ Tech Stack
 
 
 
-**- AWS EC2**
+- AWS EC2
 
-**- Ubuntu Linux**
+- Ubuntu Linux
 
-**- Apache2 Web Server**
+- Apache2 Web Server
 
-**- HTML**
+- HTML
 
-**- Git \& GitHub**
-
-
-
-**## 🚀 What I Learned**
+- Git \& GitHub
 
 
 
-**- Launching an EC2 instance**
-
-**- Configuring Security Groups**
-
-**- Connecting to EC2 using SSH**
-
-**- Installing and managing Apache**
-
-**- Hosting a static website**
-
-**- Basic Linux commands**
-
-**- Basic Git workflow**
+## 🚀 What I Learned
 
 
 
-**## 📂 Project Structure**
+- Launching an EC2 instance
+
+- Configuring Security Groups
+
+- Connecting to EC2 using SSH
+
+- Installing and managing Apache
+
+- Hosting a static website
+
+- Basic Linux commands
+
+- Basic Git workflow
 
 
 
-**```**
-
-**aws-ec2-static-website/**
-
-**│── index.html**
-
-**│── README.md**
-
-**```**
+## 📂 Project Structure
 
 
 
-**## ✨ Future Improvements**
+
+aws-ec2-static-website/
+
+│── index.html
+
+│── README.md
+
+
+## ✨ Future Improvements
 
 
 
-**- Improve UI using HTML \& CSS**
+- Improve UI using HTML \& CSS
 
-**- Add Docker support**
+- Add Docker support
 
-**- Deploy using Docker Compose**
+- Deploy using Docker Compose
 
-**- Automate deployment using Jenkins CI/CD**
+- Automate deployment using Jenkins CI/CD
 
 
 
