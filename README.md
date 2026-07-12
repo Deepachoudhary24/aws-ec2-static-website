@@ -1,83 +1,53 @@
-# ☁️ AWS EC2 Static Website
+# AWS EC2 Static Website
 
-## 📌 Overview
+This project demonstrates how to deploy a static HTML website on an AWS EC2 Ubuntu instance using Apache HTTP Server. The website is hosted on a Linux virtual machine and accessed through the EC2 public IP address.
 
-This is my first cloud project where I deployed a static website on an AWS EC2 Ubuntu instance using Apache2 Web Server. The project helped me understand the basics of AWS, Linux, SSH, Apache, and Git.
-
----
-
-## ✨ Features
-
-- Hosted a static website on AWS EC2
-- Connected securely using SSH
-- Installed and configured Apache2
-- Served a custom HTML page over HTTP
-- Managed the project using Git & GitHub
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - AWS EC2
-- Ubuntu Linux
-- Apache2
+- Ubuntu
+- Apache HTTP Server
 - HTML
 - Git
 - GitHub
 
----
-
-## 🏗️ Architecture
-
-
-Browser
-   │
-HTTP
-   │
-AWS EC2 (Ubuntu)
-   │
-Apache2 Web Server
-   │
-Static HTML Website
-
----
-
-## 📂 Project Structure
-
+## Project Structure
 
 aws-ec2-static-website/
 ├── index.html
 ├── README.md
 └── screenshots/
-    ├── ec2-instance.png
-    ├── apache-running.png
-    └── website-live.png
 
----
+## Deployment Steps
 
-## 📚 What I Learned
+Launch an Ubuntu EC2 instance.
 
-- Launching an EC2 instance
-- Configuring Security Groups
-- Connecting using SSH
-- Installing Apache2
-- Hosting a static website
-- Basic Linux commands
-- Git & GitHub workflow
+Connect to the instance using SSH.
 
----
+ssh -i <key-pair>.pem ubuntu@<public-ip>
 
-## 🔮 Future Improvements
+Update the package list.
 
-- Improve UI with HTML & CSS
-- Dockerize the application
-- Deploy using Docker Compose
-- Automate deployment using Jenkins CI/CD
+sudo apt update
 
----
+Install Apache.
 
-## 👩‍💻 Author
+sudo apt install apache2 -y
 
-**Deepa Choudhary**
+Copy the website to the Apache document root.
 
-⭐ This project marks the beginning of my Cloud & DevOps learning journey.
+sudo cp index.html /var/www/html/index.html
+
+Verify that Apache is running.
+
+sudo systemctl status apache2
+
+## Access the Application
+
+http://<EC2-Public-IP>
+
+## Repository Contents
+
+- `index.html` – Static website
+- `README.md` – Project documentation
+- `screenshots/` – Deployment screenshots
